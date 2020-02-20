@@ -1,0 +1,22 @@
+<!--pages/template/list-detail/list-detail.wxml-->
+<template name="list-detail">
+  <view class="list-detail-box">
+  
+    <view class="list-detail-content">{{anaContent}}</view>
+    <view class="list-detail-from">—「 {{anaTitle}} 」</view>
+    <view class="list-detail-operation">
+        <view><image src="/images/operation/love-off.png" /> 2</view>
+        <view><image src="/images/operation/copy.png" /> 5</view>
+        <view><image src="/images/operation/share.png" /> 10</view>
+    </view>
+    
+    <!-- <view class="list-detail-content">在弱者眼里可能是这样，不过，我的确很强。</view>
+    <view class="list-detail-from">—「 从零开始的异世界生活 」</view>
+    <view class="list-detail-operation">
+        <view><image src="/images/operation/love-off.png" /> 2</view>
+        <view><image src="/images/operation/copy.png" /> 5</view>
+        <view><image src="/images/operation/share.png" /> 10</view>
+    </view> -->
+
+  </view>
+</template>

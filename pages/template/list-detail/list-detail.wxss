@@ -1,0 +1,30 @@
+/* pages/template/list-detail/list-detail.wxss */
+.list-detail-box{
+  width: 100%;
+  margin:20rpx 0rpx;
+  border-bottom: 1px solid #eeeded;
+}
+.list-detail-content{
+  text-align:justify;
+}
+.list-detail-from{
+  color: #707070;
+  text-align:end;
+  font-size: 25rpx;
+  margin: 60rpx 0rpx 30rpx;
+}
+.list-detail-operation{
+  color: #bfbfbf;
+  font-size: 25rpx;
+  padding: 0rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+.list-detail-operation image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
