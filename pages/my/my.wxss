@@ -1,1 +1,58 @@
 /* pages/my/my.wxss */
+.container{
+  padding: 0rpx 60rpx;
+}
+.loginBtnView{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0,0.3)
+}
+.loginBtn{
+  top: 45%;
+  width: 75%;
+}
+.top{
+  margin-bottom: 50rpx;
+  padding: 80rpx 0px 60rpx;
+  border-bottom: 1rpx solid #eeeded;
+}
+.top>view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.top>view>text{
+  font-size: 50rpx;
+  font-weight: 500;
+}
+.top image{
+  width: 125rpx;
+  height: 125rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: top;
+  padding: 0px 30rpx;
+}
+.bottom>view{
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  color: #707070;
+}
+.bottom>view>text{
+  text-align: center;
+  margin: 15rpx 0rpx;
+}
+.bottom>view>text:nth-child(2){
+  color: black;
+  font-size: 35rpx;
+  font-weight: 500;
+}

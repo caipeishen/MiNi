@@ -1,6 +1,6 @@
 /**home.wxss**/
 @import '/pages/template/list-detail/list-detail.wxss';
-.container{
+.content{
   font-size: 30rpx;
   padding: 0rpx 60rpx;
 }

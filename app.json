@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/my/my",
     "pages/home/home",
     "pages/logs/logs",
     "pages/edit/edit",
-    "pages/my/my",
     "pages/index2/index2"
   ],
   "window": {

@@ -5,7 +5,7 @@ const request = require("../utils/request.js")
 
 module.exports = {
 
-  // 查询所有类型
+  // 查询语句
   getAnaList: (params) => {
     return request.request("post", cfg.url + 'ana/getAnaList', params);
   }

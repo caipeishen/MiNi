@@ -1,9 +1,11 @@
 <!--index.wxml-->
 <import src='/pages/template/list-detail/list-detail' />
-<view class="container">
-
-    <block wx:for="{{anaList}}"  wx:key="id">
-      <template is="list-detail" data="{{...item}}" ></template>
-    </block>
-
+<view>
+  <scroll-view scroll-y="true" style="height: {{scroll_height}}rpx;width:100%" bindscrolltolower="scrollLoadData">
+    <view class="content">
+      <block wx:for="{{anaList}}"  wx:key="id" >
+        <template is="list-detail" data="{{...item}}" ></template>
+      </block>
+    </view>
+  </scroll-view>
 </view>

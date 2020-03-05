@@ -1,2 +1,39 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<!-- 引导用户登录 -->
+<view class="loginBtnView" wx:if="{{userInfo==null}}">
+    <button class="loginBtn" bindgetuserinfo='getUserInfo'  open-type='getUserInfo'>点击登陆</button>
+</view>
+
+<view class="container">
+
+  <!-- 上半部分 -->
+  <view class="top">
+    <!-- 未授权 -->
+    <view wx:if="{{userInfo==null}}">
+      <view>未登录</view>
+      <image src="/images/un_login.png" />
+    </view>
+    <!-- 已授权 -->
+    <view wx:else>
+      <text>{{userInfo.nickName}}</text>
+      <image src="{{userInfo.avatarUrl}}"/>
+    </view>
+  </view>
+
+  <!-- 下半部分 -->
+  <view class="bottom">
+    <view>
+      <text>收藏</text>
+      <text>10</text>
+    </view>
+    <view>
+      <text>复制</text>
+      <text>10</text>
+    </view>
+    <view>
+      <text>分享</text>
+      <text>6</text>
+    </view>
+  </view>
+
+</view>

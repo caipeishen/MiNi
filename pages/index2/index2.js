@@ -43,33 +43,4 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo;
-    wx.login({
-      success: res => {
-        var code = res.code;
-        if (code) {
-          // --------- 使用 code 换取 openid 和 session_key 等信息 ------------------
-          wx.request({
-            url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx182d0278d896f507&secret=338944d9196059d18183cb02996648d2&js_code='+code+'&grant_type=authorization_code',
-            method:'get',
-            success: res => {
-              if (res.statusCode == 200){
-                app.globalData.userInfo.openid = res.data.openid;
-                this.setData({
-                  userInfo: e.detail.userInfo,
-                  hasUserInfo: true
-                })
-              }
-              console.log(app.globalData.userInfo);
-            },
-          },)
-          // ------------------------------------
-        } else {
-          console.log('获取用户登录态失败：' + res.errMsg);
-        }
-      }
-    });
-  }
 })
